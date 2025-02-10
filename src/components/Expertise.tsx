@@ -6,39 +6,31 @@ import Chip from '@mui/material/Chip';
 import '../assets/styles/Expertise.scss';
 
 const labelsFirst = [
+    "Java",
+    "Python",
     "React",
     "TypeScript",
     "JavaScript",
+    "Node.js",
     "HTML5",
     "CSS3",
-    "SASS",
+    "SCSS",
     "Flask",
-    "Python",
     "SQL",
-    "PostgreSQL",
-    "Postman"
+    "Postman",
+    "Git",
+    "Github",
+    "Kotlin",
+    "C",
 ];
 
 const labelsSecond = [
-    "Git",
-    "GitHub Actions",
-    "Docker",
-    "AWS",
-    "Azure",
-    "Linux",
-    "Snowflake",
-    "Pandas",
-    "Selenium",
-];
-
-const labelsThird = [
-    "OpenAI",
-    "Groq",
-    "LangChain",
-    "Qdrant",
-    "Hugging Face",
-    "LlamaIndex",
-    "Streamlit",
+    "Scikit-learn",
+    "TensorFlow",
+    "PyTorch",
+    "Google Colab",
+    "Keras",
+    "R",
 ];
 
 function Expertise() {
@@ -52,7 +44,7 @@ function Expertise() {
                     <h3>Full Stack Web Development</h3>
                     <p>I have built a diverse array of web applications from scratch using modern technologies such as React and Flask. I have a strong proficiency in the SDLC process and frontend + backend development.</p>
                     <div className="flex-chips">
-                        <span className="chip-title">Tech stack:</span>
+                        <span className="chip-title">Technologies:</span>
                         {labelsFirst.map((label, index) => (
                             <Chip key={index} className='chip' label={label} />
                         ))}
@@ -60,24 +52,12 @@ function Expertise() {
                 </div>
 
                 <div className="skill">
-                    <FontAwesomeIcon icon={faDocker} size="3x"/>
-                    <h3>DevOps & Automation</h3>
-                    <p>Once the application is built, I help clients set up DevOps testing, CI/CD pipelines, and deployment automation to support the successful Go-Live.</p>
-                    <div className="flex-chips">
-                        <span className="chip-title">Tech stack:</span>
-                        {labelsSecond.map((label, index) => (
-                            <Chip key={index} className='chip' label={label} />
-                        ))}
-                    </div>
-                </div>
-
-                <div className="skill">
                     <FontAwesomeIcon icon={faPython} size="3x"/>
-                    <h3>GenAI & LLM</h3>
+                    <h3>AI & Machine Learning</h3>
                     <p>Stay relevant in the market by leveraging the latest AI models in your projects. I have professional experience building enterprise grade GenAI-enabled solutions to empower intelligent decision making.</p>
                     <div className="flex-chips">
-                        <span className="chip-title">Tech stack:</span>
-                        {labelsThird.map((label, index) => (
+                        <span className="chip-title">Technologies:</span>
+                        {labelsSecond.map((label, index) => (
                             <Chip key={index} className='chip' label={label} />
                         ))}
                     </div>
