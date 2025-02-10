@@ -9,7 +9,7 @@ function Main() {
     <div className="container">
       <div className="about-section">
         <div className="image-wrapper">
-          <img src="https://my-aws-assets.s3.us-west-2.amazonaws.com/portfolio-img/avatar_circle.jpeg" alt="Avatar" />
+          <img src="https://media.licdn.com/dms/image/v2/D5603AQECBBfoRmUOXg/profile-displayphoto-shrink_800_800/profile-displayphoto-shrink_800_800/0/1710964655314?e=1744848000&v=beta&t=pqG37oE12BQrrFRGA_dmHCVYV5DLQaQ-D5vb9k8zEP0" alt="Avatar" />
         </div>
         <div className="content">
           <div className="social_icons">
