@@ -5,6 +5,7 @@ import mock07 from '../assets/images/mock07.png';
 import mock08 from '../assets/images/mock08.png';
 import mock09 from '../assets/images/mock09.png';
 import mock10 from '../assets/images/mock10.png';
+import CNN from '../assets/images/CNN.png'
 import '../assets/styles/Project.scss';
 
 function Project() {
@@ -13,7 +14,7 @@ function Project() {
         <h1>Projects</h1>
         <div className="projects-grid">
             <div className="project">
-                <a href="https://github.com/agron-gojcaj/TextClassificationModel" target="_blank" rel="noreferrer"><img src={mock09} className="zoom" alt="thumbnail" width="100%"/></a>
+                <a href="https://github.com/agron-gojcaj/TextClassificationModel" target="_blank" rel="noreferrer"><img src={CNN} className="zoom" alt="thumbnail" width="100%"/></a>
                 <a href="https://github.com/agron-gojcaj/TextClassificationModel" target="_blank" rel="noreferrer"><h2>Text Classification Model</h2></a>
                 <p>Implemented a deep learning Convolutional Neural Network and a Naive Bayes model to classify news articles into 4 categories— World News, Sports, Business, and Science/Tech. Implemented in Google Colab with Python, using Tensorflow, Keras, and scikit-learn libraries.</p>
             </div>
