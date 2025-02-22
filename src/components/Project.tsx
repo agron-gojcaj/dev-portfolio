@@ -3,9 +3,9 @@ import mock05 from '../assets/images/mock05.png';
 import mock06 from '../assets/images/mock06.png';
 import mock07 from '../assets/images/mock07.png';
 import mock08 from '../assets/images/mock08.png';
-import mock09 from '../assets/images/mock09.png';
 import mock10 from '../assets/images/mock10.png';
 import CNN from '../assets/images/CNN.png'
+import FoodClassifier from '../assets/images/FoodClassifier.png'
 import '../assets/styles/Project.scss';
 
 function Project() {
@@ -24,7 +24,7 @@ function Project() {
                 <p>Built a web application that guides small businesses through the steps of a cybersecurity audit, making cybersecurity audits more accessible and cost-effective. HTML, CSS, Javascript were used to develop the frontend, while Flask and SQL were used for the backend.</p>
             </div>
             <div className="project">
-                <a href="https://github.com/nsteiner/Healthy_Foods_Classifier" target="_blank" rel="noreferrer"><img src={mock10} className="zoom" alt="thumbnail" width="100%"/></a>
+                <a href="https://github.com/nsteiner/Healthy_Foods_Classifier" target="_blank" rel="noreferrer"><img src={FoodClassifier} className="zoom" alt="thumbnail" width="100%"/></a>
                 <a href="https://github.com/nsteiner/Healthy_Foods_Classifier" target="_blank" rel="noreferrer"><h2>Food Healthiness Classifier</h2></a>
                 <p>Researched, trained, and compared multiple machine learning models that classify whether a food item is healthy, unhealthy, or should be consumed in moderation. Created models in Google Colab with Python, using the scikit-learn library.</p>
             </div>
