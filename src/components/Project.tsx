@@ -1,6 +1,4 @@
 import React from "react";
-import mock05 from '../assets/images/mock05.png';
-import mock06 from '../assets/images/mock06.png';
 import CNN from '../assets/images/CNN.png'
 import FoodClassifier from '../assets/images/FoodClassifier.png'
 import FoodJunkie from '../assets/images/FoodJunkie.png'
