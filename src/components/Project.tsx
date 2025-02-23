@@ -1,11 +1,12 @@
 import React from "react";
 import mock05 from '../assets/images/mock05.png';
 import mock06 from '../assets/images/mock06.png';
-import mock07 from '../assets/images/mock07.png';
-import mock08 from '../assets/images/mock08.png';
 import CNN from '../assets/images/CNN.png'
 import FoodClassifier from '../assets/images/FoodClassifier.png'
 import FoodJunkie from '../assets/images/FoodJunkie.png'
+import Pong from '../assets/images/Pong.png'
+import Triolingo from '../assets/images/Triolingo.png'
+import Onit from '../assets/images/Onit.png'
 import '../assets/styles/Project.scss';
 
 function Project() {
@@ -19,7 +20,7 @@ function Project() {
                 <p>Implemented a deep learning Convolutional Neural Network and a Naive Bayes model to classify news articles into 4 categories— World News, Sports, Business, and Science/Tech. Implemented in Google Colab with Python, using Tensorflow, Keras, and scikit-learn libraries.</p>
             </div>
             <div className="project">
-                <a href="https://github.com/SKel1817/on-it" target="_blank" rel="noreferrer"><img src={mock05} className="zoom" alt="thumbnail" width="100%"/></a>
+                <a href="https://github.com/SKel1817/on-it" target="_blank" rel="noreferrer"><img src={Onit} className="zoom" alt="thumbnail" width="100%"/></a>
                 <a href="https://github.com/SKel1817/on-it" target="_blank" rel="noreferrer"><h2>On-It</h2></a>
                 <p>Built a web application that guides small businesses through the steps of a cybersecurity audit, making cybersecurity audits more accessible and cost-effective. HTML, CSS, Javascript were used to develop the frontend, while Flask and SQL were used for the backend.</p>
             </div>
@@ -34,12 +35,12 @@ function Project() {
                 <p>Developed a Java Android app that functions as a personal cookbook, in which users can create, delete, and save their own recipes on a SQLite database.</p>
             </div>
             <div className="project">
-                <a href="https://github.com/agron-gojcaj/PongGame" target="_blank" rel="noreferrer"><img src={mock07} className="zoom" alt="thumbnail" width="100%"/></a>
+                <a href="https://github.com/agron-gojcaj/PongGame" target="_blank" rel="noreferrer"><img src={Pong} className="zoom" alt="thumbnail" width="100%"/></a>
                 <a href="https://github.com/agron-gojcaj/PongGame" target="_blank" rel="noreferrer"><h2>Pong Game</h2></a>
                 <p>Implemented a 2-player pong game simulation in Java using IntelliJ.</p>
             </div>
             <div className="project">
-                <a href="https://github.com/agron-gojcaj/Triolingo" target="_blank" rel="noreferrer"><img src={mock06} className="zoom" alt="thumbnail" width="100%"/></a>
+                <a href="https://github.com/agron-gojcaj/Triolingo" target="_blank" rel="noreferrer"><img src={Triolingo} className="zoom" alt="thumbnail" width="100%"/></a>
                 <a href="https://github.com/agron-gojcaj/Triolingo" target="_blank" rel="noreferrer"><h2>Triolingo</h2></a>
                 <p>Organized and coordinated development of a language learning web app, where users can learn vocabulary in a new language through learning modules. Implemented the app using HTML, CSS, JavaScript, and the Google Translate API.</p>
             </div>
