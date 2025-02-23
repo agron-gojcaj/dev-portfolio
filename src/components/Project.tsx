@@ -3,9 +3,9 @@ import mock05 from '../assets/images/mock05.png';
 import mock06 from '../assets/images/mock06.png';
 import mock07 from '../assets/images/mock07.png';
 import mock08 from '../assets/images/mock08.png';
-import mock10 from '../assets/images/mock10.png';
 import CNN from '../assets/images/CNN.png'
 import FoodClassifier from '../assets/images/FoodClassifier.png'
+import FoodJunkie from '../assets/images/FoodJunkie.png'
 import '../assets/styles/Project.scss';
 
 function Project() {
@@ -29,7 +29,7 @@ function Project() {
                 <p>Researched, trained, and compared multiple machine learning models that classify whether a food item is healthy, unhealthy, or should be consumed in moderation. Created models in Google Colab with Python, using the scikit-learn library.</p>
             </div>
             <div className="project">
-                <a href="https://github.com/nsteiner/FoodJunkieRep" target="_blank" rel="noreferrer"><img src={mock08} className="zoom" alt="thumbnail" width="100%"/></a>
+                <a href="https://github.com/nsteiner/FoodJunkieRep" target="_blank" rel="noreferrer"><img src={FoodJunkie} className="zoom" alt="thumbnail" width="100%"/></a>
                 <a href="https://github.com/nsteiner/FoodJunkieRep" target="_blank" rel="noreferrer"><h2>Food Junkie</h2></a>
                 <p>Developed a Java Android app that functions as a personal cookbook, in which users can create, delete, and save their own recipes on a SQLite database.</p>
             </div>
