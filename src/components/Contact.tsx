@@ -65,7 +65,7 @@ function Contact() {
             <div className='form-flex'>
               <TextField
                 required
-                id="outlined-required"
+                id="name-input"
                 label="Your Name"
                 placeholder="What's your name?"
                 value={name}
@@ -77,7 +77,7 @@ function Contact() {
               />
               <TextField
                 required
-                id="outlined-required"
+                id="email-input"
                 label="Email / Phone"
                 placeholder="How can I reach you?"
                 value={email}
@@ -90,7 +90,7 @@ function Contact() {
             </div>
             <TextField
               required
-              id="outlined-multiline-static"
+              id="message-input"
               label="Message"
               placeholder="Send me any inquiries or questions"
               multiline

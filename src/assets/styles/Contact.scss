@@ -23,6 +23,11 @@
   }
 }
 
+.contact-form .MuiInputBase-input {
+  position: relative;
+  z-index: 1;
+}
+
 label {
   font-size: 1.2rem;
   font-family: 'DomaineDispNar-Medium', sans-serif;
