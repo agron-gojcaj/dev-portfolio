@@ -25,8 +25,6 @@ function Contact() {
     setEmailError(email === '');
     setMessageError(message === '');
 
-    /* Uncomment below if you want to enable the emailJS */
-
     if (name !== '' && email !== '' && message !== '') {
       var templateParams = {
         name: name,
@@ -35,7 +33,7 @@ function Contact() {
       };
 
       console.log(templateParams);
-      emailjs.send('service_id', 'template_id', templateParams, 'api_key').then(
+      emailjs.send('service_2yr74cu', 'template_kl9cjjp', templateParams, 'i5EYT_ud6cBhREB85').then(
         (response) => {
           console.log('SUCCESS!', response.status, response.text);
         },
