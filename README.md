@@ -4,4 +4,4 @@
 
 ## Link to Website
 
-[Agron Gojcaj's Portfolio](https://www.agron-gojcaj.github.io/dev-portfolio)
+[Agron Gojcaj's Portfolio](https://agron-gojcaj.github.io/dev-portfolio)
