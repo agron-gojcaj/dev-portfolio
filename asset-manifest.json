@@ -1,8 +1,9 @@
 {
   "files": {
-    "main.css": "/dev-portfolio/static/css/main.1222db4d.css",
-    "main.js": "/dev-portfolio/static/js/main.264ce17f.js",
+    "main.css": "/dev-portfolio/static/css/main.4beffa44.css",
+    "main.js": "/dev-portfolio/static/js/main.ed4a464a.js",
     "static/js/453.b05d8aa5.chunk.js": "/dev-portfolio/static/js/453.b05d8aa5.chunk.js",
+    "static/media/Updated_Headshot.png": "/dev-portfolio/static/media/Updated_Headshot.832f958d9dc0602042c7.png",
     "static/media/bg-light.png": "/dev-portfolio/static/media/bg-light.bac0efb485244a522981.png",
     "static/media/FoodJunkie.png": "/dev-portfolio/static/media/FoodJunkie.e81b3dec2fa4705b8438.png",
     "static/media/Triolingo.png": "/dev-portfolio/static/media/Triolingo.7b3311615865365efecb.png",
@@ -12,12 +13,12 @@
     "static/media/Onit.png": "/dev-portfolio/static/media/Onit.f3b71e973c4d1c6636f8.png",
     "static/media/FoodClassifier.png": "/dev-portfolio/static/media/FoodClassifier.2c6698c4e8a5df86e947.png",
     "index.html": "/dev-portfolio/index.html",
-    "main.1222db4d.css.map": "/dev-portfolio/static/css/main.1222db4d.css.map",
-    "main.264ce17f.js.map": "/dev-portfolio/static/js/main.264ce17f.js.map",
+    "main.4beffa44.css.map": "/dev-portfolio/static/css/main.4beffa44.css.map",
+    "main.ed4a464a.js.map": "/dev-portfolio/static/js/main.ed4a464a.js.map",
     "453.b05d8aa5.chunk.js.map": "/dev-portfolio/static/js/453.b05d8aa5.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.1222db4d.css",
-    "static/js/main.264ce17f.js"
+    "static/css/main.4beffa44.css",
+    "static/js/main.ed4a464a.js"
   ]
 }
