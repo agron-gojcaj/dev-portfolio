@@ -18,7 +18,8 @@ function Main() {
             <a href="https://www.linkedin.com/in/agron-gojcaj-8a336b226/" target="_blank" rel="noreferrer"><LinkedInIcon/></a>
           </div>
           <h1>Agron Gojcaj</h1>
-          <p>Software Engineer</p>
+          <p>AI Software Engineer @ Ford Motor Company</p>
+          <p className="tagline">I build AI agents, developer tooling, and MCP integrations that help engineering teams ship faster.</p>
 
           <div className="mobile_social_icons">
             <a href="https://github.com/agron-gojcaj" target="_blank" rel="noreferrer"><GitHubIcon/></a>

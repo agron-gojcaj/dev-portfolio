@@ -32,7 +32,6 @@ function Contact() {
         message: message
       };
 
-      console.log(templateParams);
       emailjs.send('service_2yr74cu', 'template_kl9cjjp', templateParams, 'i5EYT_ud6cBhREB85').then(
         (response) => {
           console.log('SUCCESS!', response.status, response.text);

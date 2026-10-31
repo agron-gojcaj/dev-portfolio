@@ -5,33 +5,41 @@ import { faReact, faPython } from '@fortawesome/free-brands-svg-icons';
 import Chip from '@mui/material/Chip';
 import '../assets/styles/Expertise.scss';
 
-const labelsFirst = [
-    "Java",
+const labelsAI = [
+    "LLM Agent Design",
+    "MCP Servers",
+    "Prompt Engineering",
+    "GitHub Actions",
+    "Tekton",
+    "GCP Cloud Run",
+    "SonarQube",
     "Python",
-    "React",
-    "TypeScript",
-    "JavaScript",
-    "Node.js",
-    "HTML5",
-    "CSS3",
-    "SCSS",
-    "Flask",
-    "SQL",
-    "Postman",
-    "Git",
-    "Github",
-    "Kotlin",
-    "C",
-];
-
-const labelsSecond = [
-    "Scikit-learn",
     "TensorFlow",
     "PyTorch",
-    "Google Colab",
     "Keras",
-    "R",
-    "NLTK",
+    "Scikit-learn",
+];
+
+const labelsFullStack = [
+    "TypeScript",
+    "JavaScript",
+    "Java",
+    "Python",
+    "Kotlin",
+    "Bash",
+    "SQL",
+    "React",
+    "Node.js",
+    "Express",
+    "Spring Boot",
+    "Flask",
+    "Tailwind",
+    "GraphQL",
+    "MongoDB",
+    "MySQL",
+    "Postman",
+    "Git",
+    "GitHub",
 ];
 
 function Expertise() {
@@ -41,24 +49,24 @@ function Expertise() {
             <h1>Expertise</h1>
             <div className="skills-grid">
                 <div className="skill">
-                    <FontAwesomeIcon icon={faReact} size="3x"/>
-                    <h3>Full Stack Development</h3>
-                    <p>I have built a diverse array of web applications using modern technologies such as React and Flask. I have a strong proficiency in the SDLC process and frontend + backend development.</p>
+                    <FontAwesomeIcon icon={faPython} size="3x"/>
+                    <h3>AI Engineering</h3>
+                    <p>I design and ship AI agents, reusable prompts and skills, and MCP server integrations that plug AI into real engineering workflows, from automated changelogs to code-quality remediation.</p>
                     <div className="flex-chips">
                         <span className="chip-title">Technologies:</span>
-                        {labelsFirst.map((label, index) => (
+                        {labelsAI.map((label, index) => (
                             <Chip key={index} className='chip' label={label} />
                         ))}
                     </div>
                 </div>
 
                 <div className="skill">
-                    <FontAwesomeIcon icon={faPython} size="3x"/>
-                    <h3>AI & Machine Learning</h3>
-                    <p>I have experience building machine learning and deep learning models that aim to solve real-world problems.</p>
+                    <FontAwesomeIcon icon={faReact} size="3x"/>
+                    <h3>Full Stack Development</h3>
+                    <p>I build web applications and backend services across the SDLC, from React and Node frontends to Spring Boot and Flask APIs, with CI/CD and testing built in.</p>
                     <div className="flex-chips">
                         <span className="chip-title">Technologies:</span>
-                        {labelsSecond.map((label, index) => (
+                        {labelsFullStack.map((label, index) => (
                             <Chip key={index} className='chip' label={label} />
                         ))}
                     </div>

@@ -4,33 +4,63 @@
   margin-right: 5px;
 }
 
+.contact_wrapper > p {
+  margin: 0 0 0.5rem;
+}
+
 .contact-form {
   padding-top: 20px;
 
   button {
     float: right;
-    background-color: white;
-    color: #050f0b;
-  }
-
-  button:hover {
-    background-color: #5000ca;
+    background-color: var(--accent-strong);
     color: white;
+    font-weight: 600;
+    text-transform: none;
+    border-radius: 10px;
+    padding: 8px 22px;
+    box-shadow: none;
+
+    &:hover {
+      background-color: var(--accent);
+      box-shadow: none;
+    }
   }
 
-  fieldset {
-    background-color: white;
-  }
-}
+  .MuiOutlinedInput-root {
+    background-color: var(--surface);
+    border-radius: 10px;
 
-.contact-form .MuiInputBase-input {
-  position: relative;
-  z-index: 1;
+    fieldset {
+      border-color: var(--border);
+    }
+
+    &:hover fieldset {
+      border-color: var(--accent);
+    }
+
+    &.Mui-focused fieldset {
+      border-color: var(--accent);
+    }
+  }
+
+  .MuiInputBase-input {
+    position: relative;
+    z-index: 1;
+    color: var(--text);
+  }
+
+  .MuiInputLabel-root {
+    color: var(--muted);
+
+    &.Mui-focused {
+      color: var(--accent);
+    }
+  }
 }
 
 label {
-  font-size: 1.2rem;
-  font-family: 'DomaineDispNar-Medium', sans-serif;
+  font-size: 1rem;
 }
 
 .form-flex {
@@ -50,4 +80,10 @@ form {
 .body-form {
   width: 100% !important;
   margin-bottom: 15px !important;
+}
+
+@media screen and (max-width: 600px) {
+  .form-flex {
+    flex-direction: column;
+  }
 }

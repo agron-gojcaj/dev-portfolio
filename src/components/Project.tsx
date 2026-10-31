@@ -1,47 +1,64 @@
 import React from "react";
 import CNN from '../assets/images/CNN.png'
 import FoodClassifier from '../assets/images/FoodClassifier.png'
-import FoodJunkie from '../assets/images/FoodJunkie.png'
-import Pong from '../assets/images/Pong.png'
-import Triolingo from '../assets/images/Triolingo.png'
 import Onit from '../assets/images/Onit.png'
 import '../assets/styles/Project.scss';
+
+type ProjectItem = {
+    title: string;
+    description: string;
+    image?: string;
+    link?: string;
+};
+
+// HustleHub has no image or link yet: add `image` and `link` below once you have them.
+const projects: ProjectItem[] = [
+    {
+        title: "HustleHub",
+        description: "Full-stack MERN app for organizing job applications, with real-time analytics, filtering, and role-based access. Built with React, Node.js, Express, and MongoDB, featuring Recharts visualizations, JWT authentication, and Mongoose validation.",
+    },
+    {
+        title: "On-It",
+        description: "Cybersecurity self-assessment tool for small businesses, with customizable audit checklists. Flask/SQL backend with a secure RESTful API and an HTML/CSS/JavaScript frontend.",
+        image: Onit,
+        link: "https://github.com/SKel1817/on-it",
+    },
+    {
+        title: "Food Healthiness Classifier",
+        description: "Led a team building a K-Nearest Neighbors model that labels food as healthy, unhealthy, or moderate, reaching 90.7% accuracy and a 90.6% F1-score. Compared multiple algorithms with Scikit-learn, Pandas, and NumPy.",
+        image: FoodClassifier,
+        link: "https://github.com/nsteiner/Healthy_Foods_Classifier",
+    },
+    {
+        title: "Text Classification Model",
+        description: "Deep learning CNN and Naive Bayes models that classify news articles into World News, Sports, Business, and Science/Tech. Built in Google Colab with TensorFlow, Keras, and scikit-learn.",
+        image: CNN,
+        link: "https://github.com/agron-gojcaj/TextClassificationModel",
+    },
+];
 
 function Project() {
     return(
     <div className="projects-container" id="projects">
         <h1>Projects</h1>
         <div className="projects-grid">
-            <div className="project">
-                <a href="https://github.com/agron-gojcaj/TextClassificationModel" target="_blank" rel="noreferrer"><img src={CNN} className="zoom" alt="thumbnail" width="100%"/></a>
-                <a href="https://github.com/agron-gojcaj/TextClassificationModel" target="_blank" rel="noreferrer"><h2>Text Classification Model</h2></a>
-                <p>Implemented a deep learning Convolutional Neural Network and a Naive Bayes model to classify news articles into 4 categories— World News, Sports, Business, and Science/Tech. Implemented in Google Colab with Python, using Tensorflow, Keras, and scikit-learn libraries.</p>
-            </div>
-            <div className="project">
-                <a href="https://github.com/SKel1817/on-it" target="_blank" rel="noreferrer"><img src={Onit} className="zoom" alt="thumbnail" width="100%"/></a>
-                <a href="https://github.com/SKel1817/on-it" target="_blank" rel="noreferrer"><h2>On-It</h2></a>
-                <p>Built a web application that guides small businesses through the steps of a cybersecurity audit, making cybersecurity audits more accessible and cost-effective. HTML, CSS, Javascript were used to develop the frontend, while Flask and SQL were used for the backend.</p>
-            </div>
-            <div className="project">
-                <a href="https://github.com/nsteiner/Healthy_Foods_Classifier" target="_blank" rel="noreferrer"><img src={FoodClassifier} className="zoom" alt="thumbnail" width="100%"/></a>
-                <a href="https://github.com/nsteiner/Healthy_Foods_Classifier" target="_blank" rel="noreferrer"><h2>Food Healthiness Classifier</h2></a>
-                <p>Researched, trained, and compared multiple machine learning models that classify whether a food item is healthy, unhealthy, or should be consumed in moderation. Created models in Google Colab with Python, using the scikit-learn library.</p>
-            </div>
-            <div className="project">
-                <a href="https://github.com/nsteiner/FoodJunkieRep" target="_blank" rel="noreferrer"><img src={FoodJunkie} className="zoom" alt="thumbnail" width="100%"/></a>
-                <a href="https://github.com/nsteiner/FoodJunkieRep" target="_blank" rel="noreferrer"><h2>Food Junkie</h2></a>
-                <p>Developed a Java Android app that functions as a personal cookbook, in which users can create, delete, and save their own recipes on a SQLite database.</p>
-            </div>
-            <div className="project">
-                <a href="https://github.com/agron-gojcaj/PongGame" target="_blank" rel="noreferrer"><img src={Pong} className="zoom" alt="thumbnail" width="100%"/></a>
-                <a href="https://github.com/agron-gojcaj/PongGame" target="_blank" rel="noreferrer"><h2>Pong Game</h2></a>
-                <p>Implemented a 2-player pong game simulation in Java using IntelliJ.</p>
-            </div>
-            <div className="project">
-                <a href="https://github.com/agron-gojcaj/Triolingo" target="_blank" rel="noreferrer"><img src={Triolingo} className="zoom" alt="thumbnail" width="100%"/></a>
-                <a href="https://github.com/agron-gojcaj/Triolingo" target="_blank" rel="noreferrer"><h2>Triolingo</h2></a>
-                <p>Organized and coordinated development of a language learning web app, where users can learn vocabulary in a new language through learning modules. Implemented the app using HTML, CSS, JavaScript, and the Google Translate API.</p>
-            </div>
+            {projects.map((project) => (
+                <div className="project" key={project.title}>
+                    {project.image && (
+                        project.link ? (
+                            <a href={project.link} target="_blank" rel="noreferrer"><img src={project.image} className="zoom" alt={`${project.title} thumbnail`} width="100%"/></a>
+                        ) : (
+                            <img src={project.image} alt={`${project.title} thumbnail`} width="100%"/>
+                        )
+                    )}
+                    {project.link ? (
+                        <a href={project.link} target="_blank" rel="noreferrer"><h2>{project.title}</h2></a>
+                    ) : (
+                        <h2>{project.title}</h2>
+                    )}
+                    <p>{project.description}</p>
+                </div>
+            ))}
         </div>
     </div>
     );
