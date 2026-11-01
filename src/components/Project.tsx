@@ -1,6 +1,7 @@
 import React from "react";
 import CNN from '../assets/images/CNN.png'
 import FoodClassifier from '../assets/images/FoodClassifier.png'
+import HustleHub from '../assets/images/HustleHub.png'
 import Onit from '../assets/images/Onit.png'
 import '../assets/styles/Project.scss';
 
@@ -11,11 +12,12 @@ type ProjectItem = {
     link?: string;
 };
 
-// HustleHub has no image or link yet: add `image` and `link` below once you have them.
 const projects: ProjectItem[] = [
     {
         title: "HustleHub",
         description: "Full-stack MERN app for organizing job applications, with real-time analytics, filtering, and role-based access. Built with React, Node.js, Express, and MongoDB, featuring Recharts visualizations, JWT authentication, and Mongoose validation.",
+        image: HustleHub,
+        link: "https://github.com/agron-gojcaj/HustleHub",
     },
     {
         title: "On-It",
